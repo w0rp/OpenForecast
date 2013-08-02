@@ -31,7 +31,7 @@ public enum WeatherCondition {
     SMOKE,
     HAZE,
     TORNADO,
-    TOPICAL_STORM,
+    TROPICAL_STORM,
     HURRICANE;
 
     public static WeatherCondition fromOpenWeatherCode(int weatherCode) {
@@ -102,7 +102,7 @@ public enum WeatherCondition {
         case 900: // tornado
             return TORNADO;
         case 901: // tropical storm
-            return TOPICAL_STORM;
+            return TROPICAL_STORM;
         case 902: // hurricane
             return HURRICANE;
         case 903: // cold

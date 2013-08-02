@@ -4,17 +4,12 @@ import android.app.Activity
 import android.os.Bundle
 import android.view.Menu
 import android.util.Log
+import java.util.Locale
 
 class ForecastActivity extends Activity {
     override def onCreate(savedInstanceState : Bundle) = {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forecast);
-
-        val temp = new Celsius(40);
-
-        val temp2 : Fahrenheit = temp.toFahrenheit;
-
-        val x, y = new Celsius(30);
     }
 
     override def onCreateOptionsMenu(menu : Menu) : Boolean = {
